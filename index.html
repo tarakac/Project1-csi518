@@ -17,6 +17,7 @@
 <body>
 
     <!-- Navigation Bar -->
+     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <!-- Brand/Logo -->
@@ -47,11 +48,63 @@
             </div>
         </div>
     </nav>
+    </header>
 
     <!--  page content goes here -->
-    <main class="container mt-4">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the home page content.</p>
+    <main>
+  <!-- Hero Section -->
+  <section class="hero-section text-center p-5  text-light" aria-labelledby="intro-title">
+    <h1 id="intro-title" class="display-4 fw-bold">Hi, I'm Taraka Chennupati</h1>
+    <p class="lead">Web Developer passionate about building accessible and modern web apps.</p>
+    <div class="mt-4">
+      <a href="aboutme.html" class="btn btn-light btn-lg me-2">About Me</a>
+      <a href="blog.html" class="btn btn-outline-light btn-lg">View My Blog</a>
+    </div>
+  </section>
+
+  <!-- Quick Highlights -->
+  <section class="container py-5" aria-labelledby="highlights-title">
+    <h2 id="highlights-title" class="mb-4 text-center">What I Do</h2>
+    <div class="row g-4 text-center">
+      <article class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+        <div class="card-body">
+        <span class="display-5" role="img" aria-label="Performance">⚡</span>
+        <h3 class="h5 mt-3">Fast & Optimized</h3>
+        <p class="text-muted">I build responsive, high-performance websites.</p>
+    </div>
+  </div>
+</article>
+    <article class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+        <div class="card-body">
+          <span class="display-5" role="img" aria-label="Design">🎨</span>
+          <h3 class="h5 mt-3">Clean Design</h3>
+          <p class="text-muted">I focus on accessible, modern, and user-friendly interfaces.</p>
+        </div>
+      </div>
+      </article>
+      <article class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+        <div class="card-body">
+          <span class="display-5" role="img" aria-label="Problem solving">💡</span>
+          <h3 class="h5 mt-3">Problem Solving</h3>
+          <p class="text-muted">I love tackling challenges with smart solutions.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Contact Me -->
+   <footer class="bg-dark text-light text-center py-4" aria-labelledby="footer-contact">
+  <h2 id="footer-contact" class="h4 mb-4">Let's Connect</h2>
+  <p>Interested in working together? Drop me a message anytime.</p>
+  <p class="mb-1">📧 <a href="mailto:tchennupati@albany.edu" class="text-light text-decoration-underline">tchennupati@albany.edu</a></p>
+  <p class="small mb-0">&copy; 2025 Taraka Chennupati. All rights reserved.</p>
+</footer>
+  
+
+
     </main>
 
     

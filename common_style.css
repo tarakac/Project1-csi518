@@ -34,3 +34,79 @@
 .navbar-brand:hover {
     color: #0d6efd !important;
 }
+
+/* Hero section gradient background */
+.hero-section {
+  background: linear-gradient(135deg, #3d39c5 0%, #fad0c4 100%);
+  color: #fff;  /* ensures text is readable */
+  padding: 6rem 1rem; /* taller hero section */
+}
+
+/* Buttons styling */
+.hero-section .btn-primary {
+  background: #43e97b; /* matches second highlight card */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.hero-section .btn-outline-light:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* Common card styling */
+.card {
+  border: none;               /* Remove default border */
+  border-radius: 0.75rem;     /* Smooth corners */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Emoji/Icon styling */
+.card-body span {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Headings and text */
+.card-body h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card-body p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Individual gradients for each card */
+.row > article:nth-child(1) .card-body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+}
+
+.row > article:nth-child(2) .card-body {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+}
+
+.row > article:nth-child(3) .card-body {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+}
+
