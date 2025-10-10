@@ -84,16 +84,17 @@
     <main class="container mt-4">
         <header class="text-center mb-5">
             <h1 class="display-4">My Photo Gallery</h1>
-            <p class="lead">A collection of moments from my journey </p>
+            <h2 class="lead">A collection of moments from my journey </h2>
         </header>
         
         <!-- Photo Gallery Grid -->
         <section class="photo-gallery mb-5" aria-label="Photo Gallery of personal moments">
             
             <!-- Gallery Item 1 - Using Picture Element -->
-            <article class="gallery-item">
+            <article class="gallery-item" style="background-color:#08090a; border-radius: 20px;">
                 <picture>
-                
+                    <source media="(min-width: 1024px)" srcset="pictures/Summer.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/Summer.jpg">
                     <img src="pictures/Summer.jpg" 
                          alt="Enjoying Ice cream on a hot summer Evening" 
                          class="gallery-img">
@@ -107,7 +108,8 @@
             <!-- Gallery Item 2 -->
             <article class="gallery-item">
                 <picture>
-                    
+                    <source media="(min-width: 1024px)" srcset="pictures/Niagara.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/Niagara.jpg">
                     <img src="pictures/Niagara.jpg" 
                          alt="Niagara falls state park view" 
                          class="gallery-img">
@@ -119,11 +121,12 @@
             </article>
 
             <!-- Gallery Item 3 -->
-            <article class="gallery-item">
+            <article class="gallery-item" style="box-shadow: 0 6px 12px rgba(13,110,253,0.4);">
                 <picture>
-                    
+                    <source media="(min-width: 1024px)" srcset="pictures/RI.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/RI.jpg">
                     <img src="pictures/RI.jpg" 
-                         alt="View of Mohegan Bluff & a beach at mid day on Block island" 
+                         alt="mohegan bluff boardwalk overlooking the ocean" 
                          class="gallery-img">
                 </picture>
                 <div class="gallery-caption">
@@ -135,7 +138,8 @@
             <!-- Gallery Item 4 -->
             <article class="gallery-item">
                 <picture>
-                   
+                   <source media="(min-width: 1024px)" srcset="pictures/Sunset.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/Sunset.jpg">
                     <img src="pictures/Sunset.jpg" 
                          alt="Relaxing View of a beach sunset" 
                          class="gallery-img">
@@ -149,7 +153,8 @@
             <!-- Gallery Item 5 -->
             <article class="gallery-item">
                 <picture>
-                    
+                    <source media="(min-width: 1024px)" srcset="pictures/trip home.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/trip home.jpg">
                     <img src="pictures/trip home.jpg" 
                          alt="Awesome view from a plane while going back home" 
                          class="gallery-img">
@@ -163,7 +168,8 @@
             <!-- Gallery Item 6 -->
             <article class="gallery-item">
                 <picture>
-                    
+                    <source media="(min-width: 1024px)" srcset="pictures/Uni.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/Uni.jpg">
                     <img src="pictures/Uni.jpg" 
                          alt="Back to University after a great holiday" 
                          class="gallery-img">
@@ -177,7 +183,8 @@
             <!-- Gallery Item 7 -->
             <article class="gallery-item">
                 <picture>
-                   
+                   <source media="(min-width: 1024px)" srcset="pictures/Thai.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/Thai.jpg">
                     <img src="pictures/Thai.jpg" 
                          alt="Great capture of good food through a camera lens" 
                          class="gallery-img">
@@ -191,7 +198,8 @@
             <!-- Gallery Item 8 -->
             <article class="gallery-item">
                 <picture>
-                    
+                    <source media="(min-width: 1024px)" srcset="pictures/Taichi.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/Taichi.jpg">
                     <img src="pictures/Taichi.jpg" 
                          alt="Taichi Since 2015, a great place for Tea" 
                          class="gallery-img">
@@ -205,7 +213,8 @@
             <!-- Gallery Item 9 -->
             <article class="gallery-item">
                 <picture>
-                    
+                    <source media="(min-width: 1024px)" srcset="pictures/CherryBlossom.jpg">
+                    <source media="(min-width: 768px)" srcset="pictures/CherryBlossom.jpg">
                     <img src="pictures/CherryBlossom.jpg" 
                          alt="Beautiful CherryBlossom right outside my class" 
                          class="gallery-img">
@@ -225,7 +234,7 @@
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
             </svg>
             <div>
-                <strong>Note:</strong> All images are placeholders. Click on any image to view full size (feature coming soon!).
+                <strong>Note:</strong>  Click on any image to view full size (feature coming soon!).
             </div>
         </div>
 
@@ -242,7 +251,7 @@
         </p>
     </footer>
 
-    </main>
+    
 
     
 </body>
