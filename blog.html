@@ -45,9 +45,219 @@
 
     <!--  page content goes here -->
     <main class="container mt-4">
-        
-    </main>
+        <!-- Blog Header with Picture Element -->
+        <header class="blog-header text-center mb-5">
+            <picture>
+                <!-- Large screens: wider image -->
+                <source media="(min-width: 1200px)" srcset="tech.png">
+                <!-- Medium screens: medium image -->
+                <source media="(min-width: 768px)" srcset="tech1.png">
+                <!-- Small screens: smaller image -->
+                <source media="(min-width: 480px)" srcset="tech2.png">
+                <!-- Default/fallback image -->
+                 <div class="scrolling-header" aria-hidden="true">
+                <img src="tech3.png" 
+                     alt="Blog header banner with gradient background" 
+                     class="scrolling-image"
+                     style="width: 100%; max-height: 400px; object-fit: cover;">
+                </div>
+            </picture>
+            <div class="header-text" role="banner">
+            <h1 class="mt-4">My Tech Blog</h1>
+            <p class="lead">Thoughts, tutorials, and insights on web development</p>
+            </div>
+        </header>
 
+        <!-- Blog Posts Section -->
+        <section class="blog-posts">
+            
+            <!-- Blog Post 1 -->
+            <article class="blog-post mb-5 p-4 border rounded shadow-sm">
+                <div class="post-header mb-3">
+                    <picture>
+                        <!-- Responsive thumbnail -->
+                        <source media="(min-width: 768px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnC8789URJZWBi5qY5H61bJn9T5E1NMienJw&s">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnC8789URJZWBi5qY5H61bJn9T5E1NMienJw&s" 
+                             alt="Web accessibility concept illustration" 
+                             class="img-fluid rounded mb-3"
+                             style="width: 100%; max-height: 300px; object-fit: contain; border: 3px solid #e9ecef;">
+                    </picture>
+                    
+                    <h2>Understanding Web Accessibility: WCAG 2.2 AA Guidelines</h2>
+                    <p class="text-muted">
+                        <time datetime="2025-10-05">October 5, 2025</time> | 
+                        <span class="badge bg-primary">Web Development</span>
+                        <span class="badge bg-info">Accessibility</span>
+                    </p>
+                </div>
+                
+                <div class="post-content">
+                    <p>
+                        As web developers, creating accessible websites isn't just a best practice—it's our responsibility. 
+                        <strong>Web accessibility</strong> ensures that people with disabilities can perceive, understand, 
+                        navigate, and interact with websites effectively.
+                    </p>
+                    
+                    <p>
+                        The <em>Web Content Accessibility Guidelines (WCAG) 2.2</em> provide a comprehensive framework for 
+                        making web content more accessible. The AA level conformance is typically the standard that most 
+                        organizations aim to meet, as it addresses the most common accessibility barriers.
+                    </p>
+                    
+                    <h3>Key Principles of WCAG 2.2</h3>
+                    <ol>
+                        <li><strong>Perceivable:</strong> Information must be presentable to users in ways they can perceive</li>
+                        <li><strong>Operable:</strong> User interface components must be operable by all users</li>
+                        <li><strong>Understandable:</strong> Information and operation must be understandable</li>
+                        <li><strong>Robust:</strong> Content must work with current and future technologies</li>
+                    </ol>
+                    
+                    <blockquote class="border-start border-4 border-primary ps-3 my-4" 
+                                style="background-color: #f8f9fa; padding: 15px; font-style: italic;">
+                        "The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect." 
+                        - Tim Berners-Lee, inventor of the World Wide Web
+                    </blockquote>
+                    
+                    <h3>Practical Tips for Implementation</h3>
+                    <ul>
+                        <li>Always provide alternative text for images</li>
+                        <li>Ensure sufficient color contrast (4.5:1 for normal text)</li>
+                        <li>Make all functionality available via keyboard</li>
+                        <li>Use semantic HTML elements properly</li>
+                        <li>Provide clear labels for form inputs</li>
+                    </ul>
+                    
+                    <p>
+                        In my recent project, I used the <code>WAVE</code> browser extension to evaluate accessibility. 
+                        It helped me identify issues like missing alt text and insufficient contrast ratios. Tools like 
+                        these are invaluable for ensuring your site meets WCAG standards.
+                    </p>
+                    
+                    <a href="#" class="btn btn-outline-primary mt-3">Read Full Article →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post mb-5 p-4 border rounded shadow-sm">
+                <div class="post-header mb-3">
+                    <h2>My Journey Learning Bootstrap: Tips for Beginners</h2>
+                    <p class="text-muted">
+                        <time datetime="2025-09-28">September 28, 2025</time> | 
+                        <span class="badge bg-success">Tutorial</span>
+                        <span class="badge bg-warning text-dark">CSS</span>
+                    </p>
+                </div>
+                
+                <div class="post-content">
+                    <p>
+                        When I first started learning <strong>Bootstrap</strong>, I was amazed by how quickly I could 
+                        create responsive, professional-looking websites. However, I also made several mistakes along the way 
+                        that I want to share with you.
+                    </p>
+                    
+                    <h3>Common Mistakes to Avoid</h3>
+                    <dl>
+                        <dt>Over-relying on Bootstrap classes</dt>
+                        <dd style="margin-left: 20px; color: #6c757d;">
+                            While Bootstrap is powerful, you should understand CSS fundamentals. Don't be afraid to write custom CSS!
+                        </dd>
+                        
+                        <dt>Not customizing the default styles</dt>
+                        <dd style="margin-left: 20px; color: #6c757d;">
+                            Override Bootstrap's defaults to make your site unique and match your brand identity.
+                        </dd>
+                        
+                        <dt>Ignoring mobile-first design</dt>
+                        <dd style="margin-left: 20px; color: #6c757d;">
+                            Bootstrap is built mobile-first. Always test your layouts on different screen sizes!
+                        </dd>
+                    </dl>
+                    
+                    <p>
+                        The key is to use Bootstrap as a <em>foundation</em>, not a crutch. Learn the underlying CSS principles, 
+                        and you'll be able to create truly custom designs while still benefiting from Bootstrap's responsive grid 
+                        and utility classes.
+                    </p>
+                    
+                    <a href="#" class="btn btn-outline-success mt-3">Continue Reading →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 - Short Post -->
+            <article class="blog-post mb-5 p-4 border rounded shadow-sm">
+                <div class="post-header mb-3">
+                    
+                    <h2 id="tip-text">Quick Tip: CSS <span class="word-transition">Transitions</span> vs <span class="word-animation"> Animations</span></h2>
+                    <p class="text-muted">
+                        <time datetime="2025-09-15">September 15, 2025</time> | 
+                        <span class="badge bg-danger">Quick Tip</span>
+                    </p>
+                    
+                </div>
+                
+                <div class="post-content">
+                    <p>
+                        Many beginners confuse CSS <strong>transitions</strong> and <strong>animations</strong>. 
+                        Here's the quick difference:
+                    </p>
+                    
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Feature</th>
+                                <th>Transitions</th>
+                                <th>Animations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Trigger</td>
+                                <td>User interaction (hover, focus)</td>
+                                <td>Automatic or on load</td>
+                            </tr>
+                            <tr>
+                                <td>Control</td>
+                                <td>Start and end states only</td>
+                                <td>Multiple keyframes</td>
+                            </tr>
+                            <tr>
+                                <td>Loop</td>
+                                <td>No</td>
+                                <td>Yes (with iteration count)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>
+                        Use <code>transition</code> for simple state changes on hover. 
+                        Use <code>@keyframes</code> animations for complex, multi-step effects!
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="text-center my-5 p-4 bg-light rounded">
+            <h3>Want to Stay Updated?</h3>
+            <p>Subscribe to my newsletter for more web development tips and tutorials!</p>
+            <form class="d-inline-flex gap-2 justify-content-center flex-wrap">
+                <input type="email" class="form-control" placeholder="Your email address" 
+                       aria-label="Email address" style="max-width: 300px;">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </aside>
+    </main>
+<!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <p class="mb-1">&copy; 2025 Taraka Chennupati. All rights reserved.</p>
+        <p class="small mb-0">
+            <a href="index.html" class="text-light">Home</a> | 
+            <a href="aboutme.html" class="text-light">About</a> | 
+            <a href="blog.html" class="text-light">Blog</a> | 
+            <a href="pictures.html" class="text-light">Pictures</a>
+        </p>
+    </footer>
     
 </body>
 </html> 
