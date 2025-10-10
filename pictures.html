@@ -5,17 +5,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My Gallary</title>
+    <title> My Gallery</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- custom CSS -->
     <link rel="stylesheet" href="common_style.css">
-    
+    <style>
+        /* Override main background for gallery page */
+        main {
+            background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+        
+        /* Custom gallery header styling */
+        main > header h1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Override footer link colors for this page */
+        footer a {
+            color: #ffc107 !important;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            color: #ffca2c !important;
+            text-decoration: underline;
+        }
+        
+        /* Custom styling for nav tabs on this page */
+        .nav-tabs {
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .nav-tabs .nav-link.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            border-color: #667eea;
+        }
+    </style>
 </head>
 <body>
-
+    <header>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
@@ -42,10 +79,169 @@
             </div>
         </div>
     </nav>
-
+    </header>
     <!--  page content goes here -->
     <main class="container mt-4">
+        <header class="text-center mb-5">
+            <h1 class="display-4">My Photo Gallery</h1>
+            <p class="lead">A collection of moments from my journey </p>
+        </header>
         
+        <!-- Photo Gallery Grid -->
+        <section class="photo-gallery mb-5" aria-label="Photo Gallery of personal moments">
+            
+            <!-- Gallery Item 1 - Using Picture Element -->
+            <article class="gallery-item">
+                <picture>
+                
+                    <img src="pictures/Summer.jpg" 
+                         alt="Enjoying Ice cream on a hot summer Evening" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Summer 2024</h3>
+                    <p>First Summer in Albany</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 2 -->
+            <article class="gallery-item">
+                <picture>
+                    
+                    <img src="pictures/Niagara.jpg" 
+                         alt="Niagara falls state park view" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Niagara Falls State Park </h3>
+                    <p>Tickingoff My Bucketlist</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 3 -->
+            <article class="gallery-item">
+                <picture>
+                    
+                    <img src="pictures/RI.jpg" 
+                         alt="View of Mohegan Bluff & a beach at mid day on Block island" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Block Island 2025</h3>
+                    <p>Mohegan Bluff</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 4 -->
+            <article class="gallery-item">
+                <picture>
+                   
+                    <img src="pictures/Sunset.jpg" 
+                         alt="Relaxing View of a beach sunset" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Sunset in Beaches</h3>
+                    <p>Weekend trip in Narraganset</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 5 -->
+            <article class="gallery-item">
+                <picture>
+                    
+                    <img src="pictures/trip home.jpg" 
+                         alt="Awesome view from a plane while going back home" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Flying</h3>
+                    <p>Going home is all that's needed when in stress</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 6 -->
+            <article class="gallery-item">
+                <picture>
+                    
+                    <img src="pictures/Uni.jpg" 
+                         alt="Back to University after a great holiday" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>UAlbany</h3>
+                    <p>Back from a break</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 7 -->
+            <article class="gallery-item">
+                <picture>
+                   
+                    <img src="pictures/Thai.jpg" 
+                         alt="Great capture of good food through a camera lens" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Food Photography</h3>
+                    <p>Trying New Foods as a hobby</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 8 -->
+            <article class="gallery-item">
+                <picture>
+                    
+                    <img src="pictures/Taichi.jpg" 
+                         alt="Taichi Since 2015, a great place for Tea" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Zang Zang Special Tea</h3>
+                    <p>Boba Tea is all i need to reset</p>
+                </div>
+            </article>
+
+            <!-- Gallery Item 9 -->
+            <article class="gallery-item">
+                <picture>
+                    
+                    <img src="pictures/CherryBlossom.jpg" 
+                         alt="Beautiful CherryBlossom right outside my class" 
+                         class="gallery-img">
+                </picture>
+                <div class="gallery-caption">
+                    <h3>Getaway Spot</h3>
+                    <p>Relaxing </p>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- Bootstrap Alert Component -->
+        <div class="alert alert-info d-flex align-items-center" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle-fill me-2" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </svg>
+            <div>
+                <strong>Note:</strong> All images are placeholders. Click on any image to view full size (feature coming soon!).
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <p class="mb-1">&copy; 2025 Taraka Chennupati. All rights reserved.</p>
+        <p class="small mb-0">
+            <a href="index.html" class="text-light">Home</a> | 
+            <a href="aboutme.html" class="text-light">About</a> | 
+            <a href="blog.html" class="text-light">Blog</a> | 
+            <a href="pictures.html" class="text-light">Pictures</a>
+        </p>
+    </footer>
+
     </main>
 
     
